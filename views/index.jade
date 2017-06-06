@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1.text-center #{title}
+  div.container
+    div.content
+      table.table.table-inverse
+        thead
+          tr
+            th Quote
+            th Name
+        tbody
+          each item in quoterows
+            tr
+              td #{item.quote}
+              td #{item.name}
+              td(id=title)
+                a.editicon(href="Add").btn.btn-info.btn-xs
+                  span Add New Quote
+                a.editicon(id=item._id href="edit/"+item._id).btn.btn-info.btn-xs
+                  span Edit
+                a(id=item._id href="delete/"+item._id).btn.btn-danger.btn-xs
+                  span Delete
+  div.footer

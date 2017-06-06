@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div.container
+      h1= "Add a Quote!"
+      form(action="/add" method="POST")
+        div.form-group
+          label(for="name") Name:
+          input.form-control(type="text" name="name" placeholder="" id="name")
+        div.form-group
+          label(for="year") Year:
+          input.form-control(type="text" name="year" placeholder="" id="year")
+        div.form-group
+          label(for="age") Author Age:
+          input.form-control(type="text" name="age" placeholder="" id="age")
+        div.form-group
+          label(for="quote") Quote:
+          textarea.form-control(type="text-area" name="quote" placeholder="" id="quote" rows="5" )
+        div.form-group
+          input.btn.btn-default(type="submit")
+
+

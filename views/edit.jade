@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    div.container
+      h1= "Edit a Quote!"
+      form(action="/edit" method="POST")
+        each item in quoterows
+          div.form-group
+            label(for="name") Name:
+            input.form-control(type="text" value=item.name name="name" placeholder="" id="name")
+          div.form-group
+            label(for="year") Year:
+            input.form-control(type="text" value=item.year  name="year" placeholder="" id="year")
+          div.form-group
+            label(for="age") Author Age:
+            input.form-control(type="text" value=item.age  name="age" placeholder="" id="age")
+          div.form-group
+            label(for="quote") Quote:
+            textarea.form-control(type="text-area" value=item.quote name="quote" placeholder="" id="quote" rows="5" )=item.quote
+          div.form-group
+            input.form-control(type="hidden" value=item._id  name="id" placeholder="" id="id")
+          div.form-group
+            input.btn.btn-default(type="submit")
+
+
