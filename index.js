@@ -50,7 +50,7 @@ app.use(session({
     resave: 'true',
     secret: 'secret'
 }));
-app.use(flash());
+
 
 // for flash message
 /*
