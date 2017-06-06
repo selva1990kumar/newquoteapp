@@ -1,6 +1,6 @@
 {
   "name": "quotesnew",
-  "version": "0.0.0",
+  "version": "0.2.6",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,6 @@
   "engines": {
     "node": "6.10.2"
   },
-
   "dependencies": {
     "body-parser": "~1.17.1",
     "connect-flash": "^0.1.1",
@@ -17,12 +16,15 @@
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "express-flash": "0.0.2",
+    "express-session": "^1.15.3",
     "jade": "~1.11.0",
+    "mongodb": "^2.2.28",
     "morgan": "~1.8.1",
+    "path": "^0.12.7",
     "serve-favicon": "~2.4.2",
     "session": "^0.1.0"
   },
-    "keywords": [
+  "keywords": [
     "node",
     "heroku",
     "express"

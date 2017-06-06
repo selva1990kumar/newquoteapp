@@ -10,7 +10,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
-var flash = require('express-flash');
+
 //var flash = require('connect-flash');
 
 
