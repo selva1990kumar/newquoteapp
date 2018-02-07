@@ -1,0 +1,6 @@
+Jade Template engine Notes
+ by - 
+    we can write java script code
+Include and Block are different
+  each petName in pets
+     include pet  -we can repeatedly use buy using include pet
